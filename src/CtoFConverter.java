@@ -13,8 +13,8 @@ public class CtoFConverter
 
         Scanner in = new Scanner(System.in);
         boolean validInput = false;
-        double CTemp = 0;
-        double FTemp = 0;
+        double CTemp = 0.0;
+        double FTemp;
 
         //(0°C × 9/5) + 32 = 32°F
 
@@ -31,8 +31,7 @@ public class CtoFConverter
                 String trash = in.nextLine();
                 System.out.println("You entered incorrectly, you typed: " + trash);
             }
-        }
-        while(!validInput);
+        }while(!validInput);
 
         FTemp = ((CTemp * 1.8) + 32);
         if (FTemp >= 212.0)
