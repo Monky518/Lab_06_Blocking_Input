@@ -8,6 +8,7 @@ public class CtoFConverter
         //Hint: Google is your friend!
         //Given C, solve for F
         //Again, check for a valid input value and only respond with the F value if you got it, otherwise loop until you do
+
         //Testing: 3 conditions: Bad Input, then test for the known freezing and boiling points.
 
         Scanner in = new Scanner(System.in);
@@ -22,6 +23,7 @@ public class CtoFConverter
             System.out.print("Enter your C temperature: ");
             if (in.hasNextDouble()) {
                 CTemp = in.nextDouble();
+                in.nextLine();
                 validInput = true;
             }
             else
@@ -43,7 +45,7 @@ public class CtoFConverter
         }
         else
         {
-            System.out.println("Your temperature is pretty good at " + FTemp);
+            System.out.println("Your temperature is at " + FTemp);
         }
     }
 }
