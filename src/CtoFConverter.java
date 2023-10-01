@@ -13,10 +13,9 @@ public class CtoFConverter
 
         Scanner in = new Scanner(System.in);
         boolean validInput = false;
+
         double CTemp = 0.0;
         double FTemp;
-
-        //(0°C × 9/5) + 32 = 32°F
 
         do
         {
@@ -33,6 +32,8 @@ public class CtoFConverter
             }
         }while(!validInput);
 
+        //(0°C × 9/5) + 32 = 32°F
+        //9/5 = 1.8
         FTemp = ((CTemp * 1.8) + 32);
         if (FTemp >= 212.0)
         {

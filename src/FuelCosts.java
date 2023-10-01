@@ -13,16 +13,14 @@ public class FuelCosts
         //Testing: here just use some reasonable values that you can inspect the calculations and determine they are correct
 
         Scanner in = new Scanner(System.in);
+        String trash;
+        boolean validInput = false;
 
         double tankGallons = 0.0;
         double milesPerGallon = 0.0;
         double pricePerGallon = 0.0;
-
         double hundredMileTest;
         double distanceTest;
-
-        String trash;
-        boolean validInput = false;
 
         //The number of gallons of gas in the tank
         do

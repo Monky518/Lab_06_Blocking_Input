@@ -13,15 +13,14 @@ public class RectangleInfo
         //Note: a 3 by 4 rectangle will have diagonal of 5
 
         Scanner in = new Scanner(System.in);
+        String trash;
+        boolean validInput = false;
+
         double length = 0.0;
         double width = 0.0;
-
         double area = 0.0;
         double perimeter = 0.0;
         double diagonal = 0.0;
-
-        String trash;
-        boolean validInput = false;
 
         //get length
         do
